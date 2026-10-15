@@ -1,11 +1,9 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.Talk;
 import com.example.demo.model.requestDto.TalkRequestDto;
 import com.example.demo.model.responseDto.TalkResponseDto;
 import com.example.demo.service.TalkService;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
