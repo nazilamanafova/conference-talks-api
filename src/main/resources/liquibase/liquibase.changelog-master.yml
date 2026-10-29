@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - include:
+      file: changes/migrations/2026-10-22-create-speakers-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/migrations/2026-10-22-create-talks-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/migrations/2026-10-22-insert-speakers-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/migrations/2026-10-22-insert-talks-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/migrations/2026-10-22-update-speakers-table.sql
+      relativeToChangelogFile: true

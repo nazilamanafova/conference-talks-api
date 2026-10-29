@@ -4,6 +4,7 @@ import com.example.demo.model.requestDto.SpeakerRequestDto;
 import com.example.demo.model.responseDto.SpeakerResponseDto;
 import com.example.demo.model.responseDto.TalkResponseDto;
 import com.example.demo.service.SpeakerService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,7 @@ public class SpeakerController {
     private final SpeakerService speakerService;
 
     @PostMapping
-    public ResponseEntity<SpeakerResponseDto> createSpeaker(@RequestBody SpeakerRequestDto dto){
+    public ResponseEntity<SpeakerResponseDto> createSpeaker( @Valid @RequestBody SpeakerRequestDto dto){
 
         SpeakerResponseDto response = speakerService.create(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
